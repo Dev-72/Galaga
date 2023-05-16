@@ -307,6 +307,7 @@ myShip = sprites.create(img`
     `, SpriteKind.Player)
 controller.moveSprite(myShip, 100, 100)
 myShip.setStayInScreen(true)
+music.play(music.melodyPlayable(music.footstep), music.PlaybackMode.LoopingInBackground)
 game.onUpdateInterval(5000, function () {
     mySat = sprites.createProjectileFromSide(img`
         .........bb.........
